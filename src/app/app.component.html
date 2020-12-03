@@ -1,0 +1,17 @@
+<h1 class="text-center font-weight-bold">Countdown Timer By  Kevin Hindra Jaya</h1>
+<div class="container text-center">
+  <h1></h1>
+  <h1 class="" id="buttonNgatur"><countdown #cd1 [config]="{leftTime: timeData}"></countdown></h1>
+  <div class="container collapse show" id="buttonNgatur">
+  <button (click)="hourUp();cd1.pause()" class="btn btn-success mr-2">+ 1 jam</button>
+  <button (click)="hourDown();cd1.pause()" class="btn btn-danger mr-2">- 1 jam</button>
+  <button (click)="minuteUp();cd1.pause()" class="btn btn-success mr-2">+ 1 menit</button>
+  <button (click)="minuteDown();cd1.pause()" class="btn btn-danger mr-2">- 1 menit</button>
+  <button (click)="secondUp();cd1.pause()" class="btn btn-success mr-2">+ 1 detik</button>
+  <button (click)="secondDown();cd1.pause()" class="btn btn-danger mr-2">- 1 detik</button>
+  </div>
+  <br>
+  <button (click)="cd1.pause()" class="btn btn-link btn-sm bg-secondary text-light mr-2">pause</button>
+  <button (click)="cd1.resume()" class="btn btn-link btn-sm bg-secondary text-light mr-2">resume</button>
+  <button (click)="cd1.restart()" type="button" class="btn btn-link btn-sm bg-secondary text-light mr-2" data-toggle="collapse" data-target="#buttonNgatur">restart</button>
+</div>
